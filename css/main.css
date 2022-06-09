@@ -26,6 +26,8 @@ button { cursor: pointer; }
     background-color: white;
     box-shadow: 0 0 30px #e1e1e1;
     transform: translate(-50%, -50%);
+    transition-duration: .5s;
+    transition-property: opacity;
 }
 
 /*
