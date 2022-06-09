@@ -21,9 +21,19 @@ class WeatherApp {
 
     onSubmit = (event) => {
         if (event.type === 'click' || event.key === 'Enter') {
-            this.fadeInOut();
-            getWeatherByCity(this.viewElems.searchInput.value).then(data => {
-                this.displayWeatherData(data);
+            getWeatherByCity(this.viewElems.searchInput.value)
+            .then(data => {
+                if (data.cod === '404') {
+                    this.viewElems.cityNotFoundLabel.innerText = 'Not found such city';
+                    this.viewElems.searchInput.style.backgroundColor = '#f07a7a';
+                } else {
+
+                    this.viewElems.cityNotFoundLabel.innerText = '';
+                    this.viewElems.searchInput.style.backgroundColor = '#f7f7f7';
+
+                    this.fadeInOut();
+                    this.displayWeatherData(data);
+                }
             });
         }
     }
