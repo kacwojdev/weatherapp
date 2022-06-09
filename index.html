@@ -15,7 +15,7 @@
 <body>
     <main>
         <section class="weather-info" id="mainContainer">
-            <div class="weather-info__search-view">
+            <div class="weather-info__search-view"  id="weatherSearchView">
                 <label class="weather-info__search__label" for="searchInput">Check weather:</label>
                 <input type="text" placeholder="Type city to search" id="searchInput" />
                 <button id="searchButton">search</button>
@@ -32,11 +32,12 @@
                 <div class="weather-info__temperatures">
                     Current temp:<h2 id="weatherCurrentTemp">12 C</h2>
                    Highest temp: <p id="weatherMaxTemp">21 C</p>
+                   Lowest temp: <p id="weatherMinTemp">21 C</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="src/main.js"></script>
+    <script type="module" src="src/main.js"></script>
 </body>
 </html>
