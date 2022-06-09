@@ -1,10 +1,10 @@
 /* Global styles */
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: white;
     position: relative;
     height: 100vh;
     width: 100vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
 }
 
 button { cursor: pointer; }
@@ -15,12 +15,12 @@ button { cursor: pointer; }
     top: 50%;
     left: 50%;
     display: flex;
-    padding: 30px;
     margin: auto;
+    border-radius: 12px;
+    padding: 30px;
     background-color: white;
     box-shadow: 0 0 30px #e1e1e1;
     transform: translate(-50%, -50%);
-    border-radius: 12px;
 }
 
 /* Weather Forecast View */
@@ -80,10 +80,10 @@ button { cursor: pointer; }
 }
 
 .weather-info__search__label {
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 1.2rem;
     color: grey;
-    margin-bottom: 10px;
 }
 
 .weather-info__search-view label, .weather-info__search-view input {
@@ -91,20 +91,19 @@ button { cursor: pointer; }
 }
 
 .weather-info__search-view input {
-    background-color: none;
-    padding: 10px 25px;
     border: none;
     border-radius: 10px;
+    padding: 10px 25px;
     background-color: #f7f7f7;
 }
 
 .weather-info__search-view button {
-    padding: 10px 0;
     border: none;
     border-radius: 10px;
+    padding: 10px 0;
     background-color: rgba(63, 63, 172, 1);
-    color: white;
     font-weight: 700;
+    color: white;
 }
 
 .weather-info__search-view button:hover {
