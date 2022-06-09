@@ -9,7 +9,12 @@ body {
 
 button { cursor: pointer; }
 
-/* Weather info component box  */
+/*
+
+    Weather info component box
+    
+*/
+
 .weather-info {
     position: absolute;
     top: 50%;
@@ -23,7 +28,12 @@ button { cursor: pointer; }
     transform: translate(-50%, -50%);
 }
 
-/* Weather Forecast View */
+/*
+    
+    Weather Forecast View
+    
+*/
+
 .weather-info__forecast-view {
     display: flex;
     flex-direction: column;
@@ -41,7 +51,6 @@ button { cursor: pointer; }
     background-color: #e7e7e7;
 }
 
-/* Weather City Component */
 .weather-info__city {
     margin: 20px auto;
 }
@@ -71,8 +80,16 @@ button { cursor: pointer; }
 .weather-info__temperatures p {
     font-size: 1.5em;
     font-weight: 700;
-    color: red;
 }
+
+#weatherMaxTemp { color: red; }
+#weatherMinTemp { color: blue; }
+
+/* 
+
+    Weather Search City Component 
+
+*/
 
 .weather-info__search-view {
     display: none;
